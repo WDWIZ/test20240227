@@ -51,9 +51,10 @@ function App(){
 
         console.log(cookieUserData);
         
+        /*
         if (cookieUserData == "undefined") { window.location.href=`https://iam.jshsus.kr?service=newjshsus&successURL=${newID}` }
 
-        /*
+        
         else{
             setIsLogined(true);
             const data = JSON.parse(cookieUserData);
