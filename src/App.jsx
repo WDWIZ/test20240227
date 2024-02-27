@@ -48,15 +48,19 @@ function App(){
         };
       
         const cookieUserData = decodeURIComponent(getCookie('userData'));
-      
+
+        console.log(cookieUserData);
+        
         if (cookieUserData == "undefined") { window.location.href=`https://iam.jshsus.kr?service=newjshsus&successURL=${newID}` }
 
+        /*
         else{
             setIsLogined(true);
             const data = JSON.parse(cookieUserData);
             setUserData({ isLogined: true, data });
             document.cookie = 'userData=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
         }
+        */
     }, []);
 
     return(
